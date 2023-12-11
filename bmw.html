@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>BMW Marka Tanıtımı</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="resim.png" width=100px alt="BMW Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="bmw.html">Anasayfa</a></li>
+                <li><a href="modeller.html">Modeller</a></li>
+                <li><a href="teknoloji.html">Teknoloji</a></li>
+                <li><a href="iletişim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Ana sayfa tasarımı</h1>
+        <!--Görsel-->
+    </section>
+    
+  
+
+    <section id="about">
+        <h2>Şirket Tanıtımı</h2>
+        <p>BMW'nin tarihçesi</p>
+        <!-- İlgili görseller ve video -->
+    </section>
+    
+    
+    <br/>Sosyal Medya Bağlantıları
+
+    <footer>
+        <div style="display: flex;">
+            <p style="margin-right: 20px;">
+                <a href="https://www.instagram.com/bmw/" target="_blank">
+                    <img src="insta.jpg" width=50 height=50>
+                </a>
+            </p>
+        </div>
+        <br/><div style="display: flex;">
+            <p style="margin-right: 20px;">
+                <a href="https://linktr.ee/bmwsocial" target="_blank">BMW|Link Tree
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+ 
+        document.querySelector('a[href="#contact"]').addEventListener('click', function() {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        });
+        
+
+        document.querySelector('a[href="#models"]').addEventListener('click', function() {
+            document.getElementById('models').scrollIntoView({ behavior: 'smooth' });
+        });
+    
+</body>
+</html>

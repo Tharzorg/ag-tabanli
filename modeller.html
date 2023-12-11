@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Modeller</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .car-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .car-item {
+            text-align: center;
+        }
+
+        .car-item img {
+            max-width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+
+        #car-details {
+            margin-top: 30px;
+        }
+
+        .car-details-item {
+            display: none;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .car-details-item.active {
+            display: block;
+        }
+
+        .car-details-item h2 {
+            color: #333;
+        }
+
+        .car-details-item p {
+            color: #777;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="resim.png" width="100px" alt="BMW Logo">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="bmw.html">Anasayfa</a></li>
+            <li><a href="modeller.html">Modeller</a></li>
+            <li><a href="teknoloji.html">Teknoloji</a></li>
+            <li><a href="iletişim.html">İletişim</a></li>
+        </ul>
+    </nav>
+    <div class="car-container">
+        <div class="car-item" id="car1">
+            <img src="car1.jpg" alt="Car 1">
+            <p>Yeni BMW 5 Serisi Sedan</p>
+        </div>
+        <div class="car-item" id="car2">
+            <img src="car2.jpg" alt="Car 2">
+            <p>BMW 3 Serisi Sedan</p>
+        </div>
+    </div>
+
+    <div id="car-details">
+        <div class="car-details-item" id="details-car1">
+            <h2>Yeni BMW 5 Serisi Sedan Detayları</h2>
+            <p>Motor Gücü: 197 bg</p>
+            <p>Tork: 400 Nm</p>
+            <p>Hızlanma: 7.3 s</p>
+            <p>Maksimum Sürat: 228 km/sa</p>
+            <p>Yakıt Tüketimi: 5,5-6 l/100 km</p>
+            <p>CO2 Emisyonu: 143-157 gr/km</p>
+        </div>
+        <div class="car-details-item" id="details-car2">
+            <h2>BMW 3 Serisi Sedan Detayları</h2>
+            <p>Motor Gücü: 184 bg</p>
+            <p>Tork: 300 Nm</p>
+            <p>Hızlanma: 7.8 s</p>
+            <p>Maksimum Sürat: 230 km/sa</p>
+            <p>Yakıt Tüketimi: 7,2-8,6 l/100 km</p>
+            <p>CO2 Emisyonu: 164-184 gr/km</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('car1').addEventListener('click', function() {
+            showDetails('details-car1');
+        });
+        document.getElementById('car2').addEventListener('click', function() {
+            showDetails('details-car2');
+        });
+
+        function showDetails(carDetailsId) {
+            var carDetails = document.querySelectorAll('.car-details-item');
+            carDetails.forEach(function(item) {
+                item.classList.remove('active');
+            });
+
+            var selectedCarDetails = document.getElementById(carDetailsId);
+            selectedCarDetails.classList.add('active');
+        }
+    </script>
+</body>
+</html>
+
+

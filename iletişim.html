@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>İletişim</title>
+	<title>Rıza Metni</title>
+    <style>
+        .scrollable-box {
+            height: 70px;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="resim.png" width=100px alt="BMW Logo">
+        </div>
+    </header>
+	<nav>
+            <ul>
+                <li><a href="bmw.html">Anasayfa</a></li>
+                <li><a href="modeller.html">Modeller</a></li>
+                <li><a href="teknoloji.html">Teknoloji</a></li>
+                <li><a href="iletişim.html">İletişim</a></li>
+            </ul>
+        </nav>
+
+
+
+    <section id="contact">
+        <h2>İletişim</h2>
+        <div>
+            <p>Email: <a href="mailto:bmw@gmail.com">bmw@gmail.com</a></p>
+            <p>Öneri, eleştiri, talep ya da yorum... Aklınızdakileri bizimle paylaşın. Mesajınız yetkililerimiz tarafından özenle incelendikten sonra ilgili departmanlara ulaştırılacak ve en kısa sürede cevaplanacaktır.
+
+<br/>Bize telefonla ulaşmak istiyorsanız BMW İletişim Merkezi'mizi hafta içi 08.00 - 20.00, hafta sonu ise 09.00 - 18.00 saatleri arasında arayabilirsiniz: 0850 2521010</p>
+	    <p>BMW Acil Yol Yardım Hattı: 444 22 99</p>
+            
+        </div>
+
+<form action="submit_form.php" method="post">
+    <label for="name">Ad: </label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="soyad">Soyad: </label>
+    <input type="text" id="soyad" name="soyad" required>
+    <br/><br/>
+
+    <label for="email">E-posta Adresiniz: </label>
+    <input type="email" id="email" name="email" required>
+
+ 
+    <label for="phone">Telefon Numaranız: </label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Örnek: 5xxxxxxxxx" required>
+
+    <label for="city">İl Seçiniz: </label>
+    <select id="city" name="city" required>
+        <option value="" disabled selected>Lütfen bir il seçin</option>
+        <option value="istanbul">İstanbul</option>
+        <option value="ankara">Ankara</option>
+
+    </select>
+
+    <br/><label for="message" style="margin-top: 10px;display: block;">Mesajınız: </label>
+    <textarea id="message" name="message" rows="2" required></textarea>
+	<br/><b>Kişisel Verilerin İşlenmesi Hakkında Rıza Metni</b>
+	<div class="scrollable-box">
+                Tercihiniz uyarınca bizimle paylaştığınız kişisel verilerinizi, sizi daha iyi tanıyabilmek ve size özel fırsatlar sunmak için işliyor olacağız. Örneğin, eğitim durumunuz, mesleğiniz, ilgi alanlarınız uyarınca size özel fırsatlar tasarlamamızı ve sunmamızı isterseniz bu bilgilerinizi işliyor ve size özel fırsat/hizmetlerden yararlanmanızı sağlıyoruz. Bizimle bu kapsamdaki kişisel verilerinizi paylaşmak zorunda olmadığınızın belirtmek isteriz.
+               <br/> Kişisel verilerinizi aşağıda belirtilen kapsamda işleyebilmemiz için rıza vermek isterseniz kutucuğu işaretleyebilirsiniz.
+                <br/><b>- İşlenmesi İstenen Kişisel Veriler:</b> Ürün/hizmetlerimize ilişkin tercih, beğeni ve kullanım alışkanlıklarınız ile ilgi alanlarınız; sizinle olan ilişkimiz kapsamında sağladığınız müşteri işlem bilgileriniz; satın alınan ürün, hizmet süreçlerinde veya anket ve kampanyalarımızda sağladığınız pazarlama bilgileriniz; mesleğiniz; medeni durumunuz, eğitim durumunuz; kimlik ve iletişim bilgileriniz, bize sağladığınız kişisel verilerinizin analizi sonucunda elde edilen verileriniz.
+                <br/><b>- Verilerin İşlenme Amaçları:</b> Ürün/hizmetlerimize dair deneyiminizi geliştirmek ve kişiselleştirmek; profilleme, segmentasyon ve pazarlama analizleri süreçlerini yürütmek; müşterilerimizin ihtiyaç, tercih ve ilgi alanlarını anlamak; müşterilerimizin ihtiyaçlarına, tercihlerine ve ilgi alanlarına uygun ürün/hizmetleri sunmak; pazarlama stratejilerimizi belirlemek ve pazarlama faaliyetlerimizin etkinliğini ölçmek.
+                <br/><b>- Verilerin Faaliyet Kapsamında Aktarılacağı Taraflar:</b> Yukarıdaki aynı amaçları gerçekleştirebilmek için destek ve hizmet aldığımız tedarikçiler, iş ortaklarımız, grup şirketlerimiz ve üreticiler.
+            </p>
+        </div>
+	<p>Kişisel verilerinizi yukarıdaki Rıza Metninde belirtilen kapsamda işlememizi onaylıyor musunuz?</p>
+    <label>
+        <input type="radio" name="approval" value="evet" required> Evet, onaylıyorum.
+    </label>
+    <label>
+        <input type="radio" name="approval" value="hayir" required> Hayır, onaylamıyorum.
+    </label>
+
+    <p>Borusan Otomotiv İthalat ve Dağıtım A.Ş.'nin tanıtım ve kampanyalarından haberdar olmak için ileti almak ister misiniz?</p>
+    <label>
+        <input type="radio" name="newsletter" value="evet" required> Evet
+    </label>
+    <label>
+        <input type="radio" name="newsletter" value="hayir" required> Hayır
+    </label>
+    <p><button type="submit">Gönder</button></p>
+</form>    </section>
+
+    <footer>
+        <!--sosyal medya bağlantıları, vs. -->
+    </footer>
+
+</body>
+</html>
