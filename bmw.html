@@ -4,13 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+            padding: 10px 0;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+        }
+	
+	
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .gallery-item {
+            text-align: center;
+            width: 45%;
+            margin-bottom: 20px;
+        }
+
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .gallery-item p {
+            margin-top: 10px;
+            color: #000;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer img {
+            margin-right: 20px;
+        }
+        .social-media img {
+    width: 40px; 
+    height: 40px; 
+    margin: 0 10px; 
+    </style>
     <title>BMW Marka Tanıtımı</title>
 </head>
 <body>
 
     <header>
         <div class="logo">
-            <img src="resim.png" width=100px alt="BMW Logo">
+	<a href="bmw.html">
+            <img src="resim.png" width="100px" alt="BMW Logo">
         </div>
         <nav>
             <ul>
@@ -23,47 +106,343 @@
     </header>
 
     <section id="home">
-        <h1>Ana sayfa tasarımı</h1>
-        <!--Görsel-->
+        <h1>BMW Dünyasına Hoş Geldiniz!</h1>
+        <p>Yüksek performans, şıklık ve yenilik BMW markasının temelidir.</p>
+    <section>
+        <video width="100%" height="auto" autoplay loop muted>
+            <source src="bmwvideo.mp4" type="video/mp4">
+            
+        </video>
+    </section>
     </section>
     
-  
+    
 
-    <section id="about">
-        <h2>Şirket Tanıtımı</h2>
-        <p>BMW'nin tarihçesi</p>
-        <!-- İlgili görseller ve video -->
+    <section id="gallery">
+        <h2>BMW Tarihinin Dönüm Noktaları</h2>
+	<p>BMW efsanesinin doğuşu, uçak motoru üreten Karl Rapp ve Gustav Otto’nun fabrikalarını birleştirdikleri 7 Mart 1916 tarihine dayanıyor. Bayerische Motoren Werke adıyla başlayan serüvenimiz, bugün motosiklet ve otomobil üretimiyle devam ediyor. Olağanüstü yenilikler, etkileyici teknoloji, güçlü ve tutkulu müşteri ilişkisiyle BMW, 100 yılı aşkın süredir otomotiv tarihine yön veriyor. İnovasyona ve sürdürülebilirliğe verdiğimiz değer, mobilitenin bugününe ışık tutarken geleceğe ilham veriyor.</p>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="1.jpg" alt="Foto 1">
+                <b><p>1916</p>
+                <p>BMW’NİN DOĞUŞU.</p></b>
+                <p>Birinci Dünya Savaşı sırasında, BMW bir uçak motoru üreticisi olarak kuruldu. Selef şirketlerden Bayerische Flugzeug-werke AG’nin kuruluş tarihi olan 7 Mart 1916, günümüzde BMW’nin kurulduğu tarih olarak kabul ediliyor. Bavyera’ya özgü beyaz ve mavi renkteki efsanevi BMW logosu, 1917’de marka olarak tescillendi. Markanın ilk faaliyetlerine işaret eden pervane simgesi, 1920’lerde ortaya çıktı.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="2.jpg" alt="Foto 2">
+                <b><p>1923</p>
+                <p>R32 – BMW FELSEFESİ VÜCUT BULUYOR.</p></b>
+                <p>Varlığını sürdürmeyi hedefleyen BMW, hala günümüzdeki ana faaliyetlerinden biri olan motosiklet üretimine başladı. Marka felsefesini bünyesinde barındıran R32, Berlin Otomobil Fuarı'ndaki çıkışıyla büyük bir hayranlık uyandırmıştır. Zarafetin ve sportifliğin bir simgesi olan bu motosiklet, neredeyse bir asırdır BMW’nin alamet-i farikası olmayı sürdürmektedir.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="3.jpg" alt="Foto 3">
+                <b><p>1929</p>
+                <p>BMW SEMBOLÜNÜ TAŞIYAN İLK OTOMOBİL.</p></b>
+                <p>Kasım 1928’de BMW, fabrikada Dixi 3/15 PS’yi yeni üretmeye başlamış olan ve Austin Seven’ın lisanslı bir kopyası olan Eisenacher Fahrzeugfabrik’i devraldı. Mart 1929 itibariyle bir takım teknik gelişmeler sonucunda Dixi, BMW 3/15 PS DA2 halini aldı. BMW simgesini taşıyan ilk araç olan bu otomobil, şirketin otomobil sektöründeki geçmişinin başlangıcı olmuştur.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="4.jpg" alt="Foto 4">
+                <b><p>1933</p>
+                <p>YENİ MARKA YÜZÜ.</p></b>
+                <p>303, BMW’nin günümüzde hala tipik tasarım özelliklerinden biri olan böbrek şeklindeki radyatör ızgaralı ilk otomobili. 6 silindirli motoru ve sayısız teknik yeniliği ile zamanının çok ötesinde olan 303, yüksek performans, konfor ve güvenliği bir araya getiren bir geleneğin öncüsü.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="5.jpg" alt="Foto 5">
+                <b><p>1936</p>
+                <p>SPOR ARABA EFSANESİNİN DOĞUŞU.</p></b>
+                <p>328 ile BMW, 1930’ların en güzel spor otomobillerinden birini piyasaya sürdü. Yüksek motor performansının yanı sıra mükemmel yol tutuşu sayesinde 328, pek çok spor otomobil tutkununun hayranlığını kazandı. 328, çok kısa bir süre içerisinde Avrupa çapındaki yarış pistlerinde zafer kazandı. BMW 328, günümüze kadar otomobil tarihinde bir efsane olarak yer etti.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="6.jpg" alt="Foto 6">
+                <b><p>1940</p>
+                <p>BMW 328, MILLE MIGLIA’DA YARIŞIYOR.</p></b>
+                <p>BMW 328’in uluslararası yarış parkurlarındaki başarılı çıkışından dört yıl sonra BMW 328 Touring Coupé, Mille Miglia’da yarışmış ve zamanının en ünlü otomobil yarışını kazanmıştır.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="7.jpg" alt="Foto 7">
+                <b><p>1952</p>
+                <p>YENİ BAŞLANGIÇLAR.</p></b>
+                <p>BMW 501, 2. Dünya Savaşı’ndan sonra BMW’de tamamen yenilenen otomobil üretiminin bir göstergesi olmuştur. Uzun aks mesafesi ve zarif çizgileri ile 501, konforun gerçek bir temsilcisiydi.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="8.jpg" alt="Foto 8">
+                <b><p>1955</p>
+                <p>BMW 507 – BİR TASARIM İKONU.</p></b>
+                <p>BMW, tasarımcı Albrecht Graf Goertz tarafından yaratılan bu modelde ustalığını ortaya koyarak, zarif çizgileri ve rakipsiz performansı ile nefes kesici güzellikte, capcanlı bir spor otomobil yaratıyor. BMW 507, bugün bile dünya çapında oldukça popüler.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="9.jpg" alt="Foto 9">
+		<b><p>1955
+                <p>BMW ISETTA.
+</p></b>
+<p>İlk kez Mayıs ayında gün yüzüne çıkan ünlü “Knutschkugel” BMW Isetta 250 ve 300, 1950’lerin en çok satan BMW’si olarak akıllarda yer etmiştir. Zamanın ulaşım ihtiyaçlarını karşılayan 12 ya da 13 beygir gücüne sahip Isetta, Almanya’nın savaş sonrası yeniden yapılanmasının bir simgesi olarak görülüyordu.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="10.jpg" alt="Foto 10">
+		<b><p>1962
+                <p>“YENİ BİR SINIF”.</p></b>
+<p>Sportif, kompakt, fonksiyonel ve çok yönlü: modern BMW otomobillerinin stil ve başarısının temelleri BMW 1500 ile atılıyor. BMW 1500, sportif bir orta sınıf limuzinin vücut bulmuş haliydi.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="11.jpg" alt="Foto 11">
+		<b><p>1966
+                <p>BMW 02 SERİSİ.</p></b>
+<p>Kompakt boyutlar, dinamik tasarım ve sportif bir yapı, ilk defa Amerika’ya ihraç edilen bir başarı öyküsü olan BMW 02 Serisi'ni geliştirmede otomobil tasarımcılarına ve mühendislere ilham veren en önemli kriterler olmuştur.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="12.jpg" alt="Foto 12">
+		<b><p>1968
+                <p>BMW 2800 CS.</p></b>
+<p>6 silindirli motora sahip bu zarif Coupé, BMW tarafından Paris Otomobil Fuarı'nda kullanıcıların beğenisine sunuldu. 1970’lerde, yakıt enjeksiyonlu motor ile daha da geliştirilen bu araç, uluslararası otomobil yarışları mecrasında büyük heyecan uyandırmıştır.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="13.jpg" alt="Foto 13">
+		<b><p>1972
+                <p>BMW 5 SERİSİ.</p></b>
+<p>BMW 5 Serisi, orta sınıfa yeni standartlar getirmiştir. Zarafet, konfor, dinamizm ve sürüş zevkiyle nitelendirilen bu seçkin model, günümüzde hala süregelen bir başarı öyküsüne sahip. BMW 5 Serisi, geçerliliğini bugüne dek korumuş olan yeni bir model sınıflandırma yapısı kazandırmıştır.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="14.jpg" alt="Foto 14">
+		<b><p>1972
+                <p>MÜNİH OLİMPİYAT OYUNLARI.</p></b>
+<p>BMW, bu küresel etkinlik kapsamında elektrikli bir otomobilin prototipini tanıttı. BMW 1602’yi baz alan ve BMW’de “alternatif sürüş konsepti araştırmasının” başlangıcını işaret eden bu prototip, maksimum 43 beygir gücüne ve sıfır emisyona sahipti.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="15.jpg" alt="Foto 15">
+		<b><p>1972
+                <p>DİNAMİK ZARAFET.</p></b>
+<p>Fransız tasarımcı Paul Bracq’ın bir eseri olan BMW 6 Serisi, dinamik performans ve zarafeti çok özel bir biçimde bir araya getiriyor. Bu otomobil, daha önce neredeyse hiçbir otomobilin başaramadığı bir biçimde, uzun mesafe yolculuğuna uygunluğu zarafet ve sürüş dinamikleri ile birleştirmeyi başarmıştır. 13 yıllık üretim dönemi, bu serinin yoğun popülaritesinin de bir göstergesi olmuştur.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="16.jpg" alt="Foto 15">
+		<b><p>1972
+                <p>İLK M OTOMOBİL.</p></b>
+<p>Tasarımını Giorgetto Giugiaro’nun yaptığı BMW M1, üst düzey bir spor otomobili temsil ediyor. BMW M1, seçkin otomobillerden hoşlananlar için sınırlı sayıda üretilmişti. Diğer 44 yarış versiyonu, saatte 310 km gibi yüksek bir hıza ulaşabiliyordu. 1979’da bu otomobiller için Procar Serisi adında özel bir yarış serisi oluşturuldu.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="17.jpg" alt="Foto 15">
+		<b><p>1975
+                <p>3 SERİSİ EFSANESİ DOĞUYOR.</p></b>
+<p>BMW 3 Serisi, sportifliği, yenilikçi teknolojiyi, mükemmel performansı ve modern tasarımı bir araya getiriyor. İlk kez sürücü odaklı bir kokpite sahip olan 3 Serisi, tıpkı 5 Serisi gibi sınıfının lideri.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="18.jpg" alt="Foto 15">
+		<b><p>1977
+                <p>SUPREME – BMW 7 SERİSİ.</p></b>
+<p>Mayıs 1977’de piyasaya çıkan ve serinin fikir babası olan BMW 7 Serisi, birinci sınıf BMW otomobilleri açısından yeni bir çağın başlangıcı oldu. Bu sedan, şık tasarımı teknik inovasyon ile bir araya getirmiştir: BMW 7 Serisi, standart olarak tam teşekküllü elektronik bir ABS’ye sahip ilk otomobil oldu. 252 beygir gücünde 6 silindirli turbo motora sahip BMW 745i, ilk serinin öncüsü olmuştur.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="19.jpg" alt="Foto 15">
+		<b><p>1983
+                <p>PIQUET: FORMULA 1 DÜNYA ŞAMPİYONU.</p></b>
+<p>Dört silindir - 1,5 litre - turboşarj - 600 beygir gücü: tüm bunlar, Brezilyalı otomobil yarışçısı Nelson Piquet’in Formula 1 Dünya Şampiyonasını kazanmasını sağlayan Brabham BMW BT52’nin teknik özellikleri.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="20.jpg" alt="Foto 15">
+		<b><p>1983-85-86
+                <p>BMW SPA 24 SAAT YARIŞLARINI KAZANIYOR.</p></b>
+<p>Olağanüstü bir yarış performansı sergileyen BMW 635 CSi Coupé, Spa 24 Saat Yarışlarının yanı sıra, üç kez Avrupa Binek Otomobiller Şampiyonasını (1981, 1983 ve 1986) kazandı ve aynı zamanda 1984’te Alman Binek Otomobiller Şampiyonasında birinci oldu.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="21.jpg" alt="Foto 15">
+		<b><p>1983
+                <p>KONSEPTTEN GERÇEKLİĞE.</p></b>
+<p>Başlangıçta sadece bir konsept aracı olan BMW Z1, nihayetinde 8000 adetlik bir üretim hacmine ulaştı. Zamanının öncüsü olan bu otomobil, aerodinamik ve süspansiyon alanında gelişim gösterdi. İçeri çekilebilir kapılar, otomobilin benzersiz tasarımını ortaya koyan bir özellik olmuştur.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="22.jpg" alt="Foto 15">
+		<b><p>1989
+                <p>BMW 8 SERİSİ.</p></b>
+<p>Çeviklik, sportiflik ve konforu bir araya getiren birinci sınıf teknolojiye sahip BMW 8 Serisi, premium coupé segmentinde güçlü bir duruş sergiledi. Coupé, 12 silindirli güçlü bir motorla piyasaya sürüldü. 1992’de üretilen 850 CSi, bu serinin en güçlü modeli ve 380 beygir gücüne sahipti.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="23.jpg" alt="Foto 15">
+		<b><p>1991
+                <p>ELEKTROMOBİLİTE.</p></b>
+<p>Elektromobiliteye giden yolda büyük bir adım: tamamen elektrikle çalışan ve tamamen BMW tarafından üretilmiş bir otomobil olan E1, markanın 1990’lı yıllarda enerji tasarrufu alanındaki teknik liderliğinin bir göstergesiydi. Elektromobilite alanında geliştirme faaliyetleri günümüzde de devam ediyor.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="24.jpg" alt="Foto 15">
+		<b><p>1995
+                <p>AMERİKA’DA ÜRETİM.</p></b>
+<p>BMW Z3, Atlas Okyanusu'nun diğer tarafındaki Spartanburg’da üretilen ilk BMW modeli. Piyasaya sunulmasından önce bile Z3, çarpıcı tasarımıyla büyük heyecan uyandırmış ve bir James Bond serisi olan “GoldenEye” filminde yer almıştır.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="25.jpg" alt="Foto 15">
+		<b><p>1999
+                <p>BMW, LE MANS YARIŞLARINI KAZANIYOR.</p></b>
+<p>İlk defa, bir BMW fabrika ekibi Le Mans 24 Saat yarışlarında birinciliği elde etti.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="26.jpg" alt="Foto 15">
+		<b><p>1999
+                <p>YENİ BİR SEGMENT.</p></b>
+<p>BMW, Detroit Otomobil Fuarı'nda yeni bir model sunarak büyük bir heyecan yaratıyor: BMW X5, sportif arazi araçlarında yeni bir segmentin temellerini atıyor. Dört çekerli BMW X5, her türlü araziyle mükemmel şekilde başa çıkacak biçimde donatılmıştır.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="27.jpg" alt="Foto 15">
+		<b><p>2004
+                <p>REKOR KIRAN OTOMOBİL H2R.</p></b>
+<p>Bu test aracı yalnızca hidrojen ile çalışıyor. Fosil yakıtlara bir alternatif arayan BMW, 232 beygir gücü ile 301.95 km/s maksimum hıza ulaşan ve bu sayede ilk günden beri çeşitli hız rekorlarını kırmış olan ilk temiz aracı üretmiştir.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="28.jpg" alt="Foto 15">
+		<b><p>2004
+                <p>BMW 1 SERİSİ.</p></b>
+<p>BMW 1 Serisi, kompakt bir segment açısından markanın tüm özelliklerini mükemmel bir biçimde bünyesinde barındırıyor: Rakipsiz bir dinamik performans ve çevikliğe sahip olan arkadan çekişli tipik BMW motoru, 6 silindirin yanı sıra bir dizi güvenlik ekipmanı ve konfor tertibatı sayesinde arzuladığınız her şeyi size sunuyor.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="29.jpg" alt="Foto 15">
+		<b><p>2006
+                <p>BMW HYDROGEN 7.</p></b>
+<p>Bu alanda öncü olan BMW, 1980’lerden bu yana hidrojen yanma motorları üzerine araştırmalar yapıyor. Bu araştırmaların sonucunda, hidrojenle çalışan sınırlı sayıdaki ilk lüks sedan olan BMW Hydrogen 7 ortaya çıktı. Birinci sınıf bir otomobile yaraşır bir performans sergileyen yanmalı motorun çevreye zararlı emisyon düzeyi de yok denecek kadar azdı.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="30.jpg" alt="Foto 15">
+		<b><p>2009
+                <p>BMW X5 M.</p></b>
+<p>Esneklik ve üstün yol tutuşunun mükemmel bir birleşimi. BMW X5 M, ferahlık, konfor ve tipik BMW M sportifliğinin şık bir birleşimi ile değişmez sportif arazi aracı kavramını yeniden tanımlıyor.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="31.jpg" alt="Foto 15">
+		<b><p>2010
+                <p>BMW CONNECTED DRIVE.</p></b>
+<p>BMW ConnectedDrive ile BMW, araç içerisinde sınırsız İnternet kullanımı sağlayan ilk otomobil üreticisi olmuştur. Bu sayede BMW, bir kez daha araç içi çevrimiçi hizmetler konusunda öncü olmuştur.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="31.jpg" alt="Foto 15">
+		<b><p>2011
+                <p>“VISION CONNECTED DRIVE”.</p></b>
+<p>BMW, ilk kez Cenevre’deki Uluslararası Otomobil Fuarında “Vision Connected Drive” çalışmasıyla geleceğin otomobil fikrini gözler önüne sermiştir. Otomobillerin akıllı bir biçimde birbirleriyle bağlantı kurduğu, son derece yüksek bir konfor ve güvenlik düzeyi sunan muhteşem bir gelecek.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="32.jpg" alt="Foto 15">
+		<b><p>2011
+                <p>BMW i8 CONCEPT.</p></b>
+<p>BMW i8 Concept - Düşük yakıt tüketimi ile kullanışlı bir şehir otomobili, fakat bir spor otomobil kadar da hızlı. Yıllardır otomobillerinde özellikle yüksek verimlilik düzeylerine ulaşmaya çalışan BMW tarafından piyasaya sürülen BMW i8 Concept, heyecan verici bir sürüş keyfine sahip sürdürülebilir otomobillere doğru atılmış büyük bir adım.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="33.jpg" alt="Foto 15">
+		<b><p>2013
+                <p>BMW i3.</p></b>
+<p>Çevreye duyarlı, çevik, bugünün ve geleceğin kentsel mobilite gereksinimleri için mükemmel biçimde tasarlanmış olan BMW i3, otomobillerin geleceğini yeniden tanımlıyor. BMW EfficientDynamics teknolojisinin bir parçası olarak tasarlanan yenilikçi eDrive çekiş fonksiyonu, emisyonsuz ve sessiz bir sürüş deneyimi sunuyor.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="34.jpg" alt="Foto 15">
+		<b><p>2013
+                <p>BMW 4 SERİSİ.</p></b>
+<p>Nefes kesen sportif bir estetik: BMW 4 Serisi Coupé, BMW 4 Serisinin ilk otomobili. 2014 yılında BMW 4 Serisi Cabrio ve BMW 4 Serisi Gran Coupé, yeni üretilen serinin tamamlayıcısı olmuştur.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="35.jpg" alt="Foto 15">
+		<b><p>2014
+                <p>THE BMW i8.</p></b>
+<p>Spor otomobilin görünümünün ve nefes kesici performansının yanı sıra, küçük bir otomobilin yakıt tüketimine ve emisyonuna sahip bir hibrit araç olan BMW i8’in seri üretimi ile araç gelişimi en üst düzeye ulaşmıştır. Ve tabi verimlilik ile dinamikler arasındaki belirgin tezat da ortadan kalkmıştır.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="36.jpg" alt="Foto 15">
+		<b><p>2014
+                <p>İLK BMW KOMPAKT VAN'I.</p></b>
+<p>BMW’nin çok yönlü kullanışlılığı ve çevikliği, BMW’nin ilk kompakt van'ı olan BMW 2 Serisi Active Tourer’da bir araya geliyor. Ürürün geliştiriciler ve mühendisler tarafından BMW için tanımlanan bu segment, kullanışlılık ve sürüş dinamiği arasında mükemmel bir dengeye sahip.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="37.jpg" alt="Foto 15">
+		<b><p>2015
+                <p>BMW 7 SERİSİ.</p></b>
+<p>BMW Grubu, otomotivin geleceğini oluşturma konusunda uzun bir geçmişe sahip. BMW 7 Serisi ile ezber bozan yenilikler, örnek olacak nitelikte bir konfor ve çağdaş tasarımının yanı sıra, etkileyici ve son derece etkili dinamikleri sayesinde, yarının konforunu bugünden üretiyoruz.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="38.jpg" alt="Foto 15">
+		<b><p>2016
+                <p>GELECEK 100 YIL.</p></b>
+<p>BMW Grubu, 2016’da GELECEK 100 YIL sloganı altında kurumsal yıldönümünü kutladı. Kendini daima ileriye dönük ve öncü bir marka olarak tanımlayan şirket, gücünü mobiliteye hayranlık duyan olağanüstü bir ekipten alıyor. Geleceğin ulaşımını keşfedin.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="39.jpg" alt="Foto 15">
+		<b><p>2017
+                <p>BMW 5 SERİSİ.</p></b>
+<p>Modern sedan otomobil, BMW 5 Serisi'nde vücut buluyor. Dinamik ve zarif görüntüsü sayesinde, sınıfının tüm beklentilerini karşılıyor: estetik bir çeviklik ve en gelişmiş teknolojiye sahip sürüş keyfi.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="40.jpg" alt="Foto 15">
+		<b><p>2017
+                <p>BMW X2.</p></b>
+<p>İlk kez 2016 Paris Otomobil Fuarı'nda BMW Concept X2 ismiyle tanıtılan ve 2017’de lanse edilen BMW X2, daha ilk bakışta sportif iddiasını açıkça vurguluyor. Güçlü atletik özellikleri sayesinde, bu sınıfta rakipsiz dinamik özellikler ve çevik bir performans sunuyor. Yüksek kalitede iç tasarım ve birçok yenilikçi teknolojiyle birlikte yeni çağın dışa dönük karakterini oluşturuyor.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="41.jpg" alt="Foto 15">
+		<b><p>2018
+                <p>BMW 8 SERİSİ.</p></b>
+<p>BMW 8 Serisi, yıllar sonra ikinci nesliyle karşınızda ve iddiası hiç olmadığı kadar güçlü. Coupé, Cabrio ve Gran Coupé gövdeleriyle sunulan BMW 8 Serisi otomobilleri üstün kalite, lüks ve maksimum performansı mükemmel şekilde harmanlıyor.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="42.jpg" alt="Foto 15">
+		<b><p>2018
+                <p>BMW 3 SERİSİ.</p></b>
+<p>Yaklaşık yarım asır önce kendi sınıfını yarattı ve geride kalan altı nesli boyunca sürüş keyfini, yenilikçiliği ve premium değerleri zamanın ruhuyla harmanladı. BMW 3 Serisi’nin yedinci nesli, BMW geleneklerine sadık kalırken aynı zamanda BMW’nin yakın geleceğine ışık tutan benzersiz teknolojiler barındırıyor.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="43.jpg" alt="Foto 15">
+		<b><p>2018
+                <p>BMW X7.</p></b>
+<p>Yepyeni ve nefes kesen çok özel bir model. 2017’de Concept X7 iPerformance ismiyle 2017 Frankfurt Uluslararası Otomobil Fuarı’nda müjdesi verilen bu otomobil, 2018’de BMW X7 olarak tanıtıldı. Gösterişli görünümüne rağmen sade tasarımı ve atletik stili sayesinde hafif ve çevik bir izlenime sahip BMW X7, aynı zamanda iç tasarımın ferahlığı ayrıcalık, işlevsellik ve özgürlüğün etkileşimiyle birlikte üçüncü koltuk sırasına kadar üstün bir konfor sunuyor.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="44.jpg" alt="Foto 15">
+		<b><p>2019
+                <p>BMW 1 SERİSİ.</p></b>
+<p>BMW 1 Serisi’nin üçüncü nesli hayranlık dolu bakışları üzerinde toplamak için geliyor. Modern tasarım dili, daha ilk bakışta ayırt edilmesini sağlıyor. Aynı durum, modern bir atmosfere sahip ve premium kalitesi ve ferahlığıyla ilham veren iç tasarım için de geçerli. Verimli dizel ve benzinli motorlar, BMW 1 Serisi’nde ilk kez sunulan önden çekiş özelliği ve en yeni yürüyen aksam teknolojileri, dinamik ve çevik bir sürüş deneyimini garanti ediyor.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="45.jpg" alt="Foto 15">
+		<b><p>2019
+                <p>BMW 2 SERİSİ GRAN COUPÉ.
+</p></b>
+<p>Kompakt sınıfa cesur bir karaktere sahip yepyeni bir otorite geliyor: Yeni BMW 2 Serisi Gran Coupé. İddiasını gözler önüne seren, tavizsiz ve performans odaklı estetiği ile bu yepyeni model şık olmak yerine ölçüsüzlüğü, geleneksel olanın yerine bireyselliği ve sıradan olanın yerine olağanüstü olmayı tercih ediyor.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="46.jpg" alt="Foto 15">
+		<b><p>2020
+                <p>BMW 4 SERİSİ.</p></b>
+<p>BMW 4 Serisi modelleri, ikinci nesliyle karşınızda. BMW 4 Serisi Coupé, kendini mevcut eğilimlerin çok daha ötesinde konumlandırıyor. Bağımsız tasarımı ve klasik coupé silueti, ikonik modellere atıfta bulunurken kendi karakterini de öne çıkarıyor. Modelin hafifliği yola sportif bir şekilde yansırken çevikliği ve performansı da adrenalin seviyesini zirveye çıkarıyor. Yeni BMW 4 Serisi Cabrio ise bağımıs zestetik anlayışı ve zarif iç mekanı ile her sınırı aşmaya hazır. Cabrio'nun çevik sürüş özellikleri sportif dinamikleri vurguluyor ve özgürlük duygusunu sonuna kadar hissettiriyor.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="47.jpg" alt="Foto 15">
+		<b><p>2020
+                <p>BMW iX3.</p></b>
+<p>Enerji dolu ve yola çıkmaya hazır: Tamamen elektrikli Yeni BMW iX3 emisyon içermeyen yepyeni bir sürüş keyfinin habercisi. İki dünyanın en iyilerini bir araya getiren tamamen elektrikli ilk BMW SAV (Spor Aktivite Aracını) modelininin sürüş dinamikleri ve üstün kalitesi ile beşinci nesil BMW eDrive teknolojisinin yüksek performansı ve verimliliği bir arada.</p>
+            </div>
+	    <div class="gallery-item">
+                <img src="48.jpg" alt="Foto 15">
+		<b><p>2021
+                <p>BMW iX.</p></b>
+<p>Bir vizyondan doğdu. Elektrikli mobilite için tasarlandı. İlk kez 2018 Paris Motor Show’da Vision iNext konseptiyle tanıtılan ve 2021’de lanse edilen BMW iX, verimli BMW eDrive teknolojisi ve tamamen elektrikli dört çeker sistemi sayesinde, etkileyici bir menzile sahip.  Akıllı BMW İşletim Sistemi 8, sürücü odaklı sürüş keyfinde yeni bir döneme işaret ediyor. İç tasarımda son teknolojiyle bir araya getirilen premium atmosfer, maksimum konfor ve beş kişi için ferah bir oturma alanı sunuyor.</p>
+            </div>
+	    
+            
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Sosyal Medya Bağlantıları</h2>
+        <div class="social-media">
+    <a href="https://www.instagram.com/bmwturkiye/" target="_blank" title="Instagram">
+        <img src="insta.jpg" alt="Instagram">
+    </a>
+    <a href="https://www.facebook.com/BMWTurkiye/?locale=tr_TR" target="_blank" title="Facebook">
+        <img src="face.jpg" alt="Facebook">
+    </a>
+    <a href="https://twitter.com/BMWTurkiye?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" title="X">
+        <img src="x.png" alt="X">
+    </a>
+    <a href="https://www.linkedin.com/showcase/bmwturkiye/?originalSubdomain=tr" target="_blank" title="LınkedIn">
+        <img src="link.png" alt="LınkedIn">
+    </a>
+    <a href="https://www.youtube.com/bmwturkiye" target="_blank" title="Youtube">
+        <img src="yt.png" alt="Youtube">
+    </a>
+</div>
     </section>
     
-    
-    <br/>Sosyal Medya Bağlantıları
 
-    <footer>
-        <div style="display: flex;">
-            <p style="margin-right: 20px;">
-                <a href="https://www.instagram.com/bmw/" target="_blank">
-                    <img src="insta.jpg" width=50 height=50>
-                </a>
-            </p>
-        </div>
-        <br/><div style="display: flex;">
-            <p style="margin-right: 20px;">
-                <a href="https://linktr.ee/bmwsocial" target="_blank">BMW|Link Tree
-                </a>
-            </p>
-        </div>
-    </footer>
-
-    <script>
- 
-        document.querySelector('a[href="#contact"]').addEventListener('click', function() {
-            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-        });
-        
-
-        document.querySelector('a[href="#models"]').addEventListener('click', function() {
-            document.getElementById('models').scrollIntoView({ behavior: 'smooth' });
-        });
-    
 </body>
 </html>

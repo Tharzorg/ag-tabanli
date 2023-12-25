@@ -4,33 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>İletişim</title>
-	<title>Rıza Metni</title>
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+            padding: 10px 0;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            margin: 10px 0;
+        }
+
+        textarea {
+            resize: vertical;
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
         .scrollable-box {
             height: 70px;
             overflow-y: scroll;
             border: 1px solid #ccc;
             padding: 10px;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+	footer img {
+            margin-right: 20px;
+        }
+        .social-media img {
+    width: 40px; 
+    height: 40px; 
+    margin: 0 10px; 
+	
+}
+
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
         }
     </style>
+    <title>İletişim</title>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="resim.png" width=100px alt="BMW Logo">
+	<a href="bmw.html">
+            <img src="resim.png" width="100px" alt="BMW Logo">
         </div>
     </header>
-	<nav>
-            <ul>
-                <li><a href="bmw.html">Anasayfa</a></li>
-                <li><a href="modeller.html">Modeller</a></li>
-                <li><a href="teknoloji.html">Teknoloji</a></li>
-                <li><a href="iletişim.html">İletişim</a></li>
-            </ul>
-        </nav>
-
-
+    <nav>
+        <ul>
+            <li><a href="bmw.html">Anasayfa</a></li>
+            <li><a href="modeller.html">Modeller</a></li>
+            <li><a href="teknoloji.html">Teknoloji</a></li>
+            <li><a href="iletişim.html">İletişim</a></li>
+        </ul>
+    </nav>
 
     <section id="contact">
         <h2>İletişim</h2>
@@ -38,66 +130,158 @@
             <p>Email: <a href="mailto:bmw@gmail.com">bmw@gmail.com</a></p>
             <p>Öneri, eleştiri, talep ya da yorum... Aklınızdakileri bizimle paylaşın. Mesajınız yetkililerimiz tarafından özenle incelendikten sonra ilgili departmanlara ulaştırılacak ve en kısa sürede cevaplanacaktır.
 
-<br/>Bize telefonla ulaşmak istiyorsanız BMW İletişim Merkezi'mizi hafta içi 08.00 - 20.00, hafta sonu ise 09.00 - 18.00 saatleri arasında arayabilirsiniz: 0850 2521010</p>
-	    <p>BMW Acil Yol Yardım Hattı: 444 22 99</p>
-            
+                <br/>Bize telefonla ulaşmak istiyorsanız BMW İletişim Merkezi'mizi hafta içi 08.00 - 20.00, hafta sonu ise 09.00 - 18.00 saatleri arasında arayabilirsiniz: 0850 2521010</p>
+            <p>BMW Acil Yol Yardım Hattı: 444 22 99</p>
         </div>
 
-<form action="submit_form.php" method="post">
-    <label for="name">Ad: </label>
-    <input type="text" id="name" name="name" required>
-    
-    <label for="soyad">Soyad: </label>
-    <input type="text" id="soyad" name="soyad" required>
-    <br/><br/>
+        <form action="submit_form.php" method="post">
+            <label for="name">Ad:</label>
+            <input type="text" id="name" name="name" required>
 
-    <label for="email">E-posta Adresiniz: </label>
-    <input type="email" id="email" name="email" required>
+            <label for="soyad">Soyad:</label>
+            <input type="text" id="soyad" name="soyad" required>
 
- 
-    <label for="phone">Telefon Numaranız: </label>
-    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Örnek: 5xxxxxxxxx" required>
+            <label for="email">E-posta Adresiniz:</label>
+            <input type="email" id="email" name="email" required>
 
-    <label for="city">İl Seçiniz: </label>
-    <select id="city" name="city" required>
-        <option value="" disabled selected>Lütfen bir il seçin</option>
-        <option value="istanbul">İstanbul</option>
-        <option value="ankara">Ankara</option>
+            <label for="phone">Telefon Numaranız:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Örnek: 5xxxxxxxxx" required>
 
-    </select>
+            <label for="city">İl Seçiniz:</label>
+            <select id="city" name="city" required>
+                <option value="" disabled selected>Lütfen bir il seçin</option>
+                <option value="adana">Adana</option>
+    		<option value="adiyaman">Adıyaman</option>
+   		<option value="afyonkarahisar">Afyonkarahisar</option>
+    		<option value="agri">Ağrı</option>
+    		<option value="amasya">Amasya</option>
+    		<option value="ankara">Ankara</option>
+    		<option value="antalya">Antalya</option>
+    		<option value="artvin">Artvin</option>
+    		<option value="aydin">Aydın</option>
+    		<option value="balikesir">Balıkesir</option>
+    		<option value="bilecik">Bilecik</option>
+    		<option value="bingol">Bingöl</option>
+   		<option value="bitlis">Bitlis</option>
+    		<option value="bolu">Bolu</option>
+    		<option value="burdur">Burdur</option>
+    		<option value="bursa">Bursa</option>
+    		<option value="canakkale">Çanakkale</option>
+    		<option value="cankiri">Çankırı</option>
+    		<option value="corum">Çorum</option>
+    		<option value="denizli">Denizli</option>
+    		<option value="diyarbakir">Diyarbakır</option>
+    		<option value="edirne">Edirne</option>
+    		<option value="elazig">Elazığ</option>
+    		<option value="erzincan">Erzincan</option>
+    		<option value="erzurum">Erzurum</option>
+    		<option value="eskisehir">Eskişehir</option>
+    		<option value="gaziantep">Gaziantep</option>
+    		<option value="giresun">Giresun</option>
+    		<option value="gumushane">Gümüşhane</option>
+    		<option value="hakkari">Hakkâri</option>
+    		<option value="hatay">Hatay</option>
+    		<option value="isparta">Isparta</option>
+    		<option value="mersin">Mersin</option>
+    		<option value="istanbul">İstanbul</option>
+    		<option value="izmir">İzmir</option>
+    		<option value="kars">Kars</option>
+    		<option value="kastamonu">Kastamonu</option>
+    		<option value="kayseri">Kayseri</option>
+    		<option value="kirklareli">Kırklareli</option>
+    		<option value="kirsehir">Kırşehir</option>
+    		<option value="kocaeli">Kocaeli</option>
+    		<option value="konya">Konya</option>
+    		<option value="kutahya">Kütahya</option>
+    		<option value="malatya">Malatya</option>
+    		<option value="manisa">Manisa</option>
+    		<option value="kahramanmaras">Kahramanmaraş</option>
+    		<option value="mardin">Mardin</option>
+    		<option value="mugla">Muğla</option>
+    		<option value="mus">Muş</option>
+    		<option value="nevsehir">Nevşehir</option>
+    		<option value="nigde">Niğde</option>
+    		<option value="ordu">Ordu</option>
+    		<option value="rize">Rize</option>
+    		<option value="sakarya">Sakarya</option>
+    		<option value="samsun">Samsun</option>
+   		<option value="siirt">Siirt</option>
+    		<option value="sinop">Sinop</option>
+    		<option value="sivas">Sivas</option>
+    		<option value="tekirdag">Tekirdağ</option>
+    		<option value="tokat">Tokat</option>
+   		<option value="trabzon">Trabzon</option>
+    		<option value="tunceli">Tunceli</option>
+    		<option value="sanliurfa">Şanlıurfa</option>
+    		<option value="usak">Uşak</option>
+    		<option value="van">Van</option>
+    		<option value="yozgat">Yozgat</option>
+    		<option value="zonguldak">Zonguldak</option>
+    		<option value="aksaray">Aksaray</option>
+    		<option value="bayburt">Bayburt</option>
+    		<option value="karaman">Karaman</option>
+    		<option value="kirikkale">Kırıkkale</option>
+   		<option value="batman">Batman</option>
+    		<option value="sirnak">Şırnak</option>
+    		<option value="bartin">Bartın</option>
+    		<option value="ardahan">Ardahan</option>
+    		<option value="igdir">Iğdır</option>
+    		<option value="yalova">Yalova</option>
+    		<option value="karabuk">Karabük</option>
+    		<option value="kilis">Kilis</option>
+    		<option value="osmaniye">Osmaniye</option>
+    		<option value="duzce">Düzce</option>
+            </select>
 
-    <br/><label for="message" style="margin-top: 10px;display: block;">Mesajınız: </label>
-    <textarea id="message" name="message" rows="2" required></textarea>
-	<br/><b>Kişisel Verilerin İşlenmesi Hakkında Rıza Metni</b>
-	<div class="scrollable-box">
+            <label for="message">Mesajınız:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <label for="approval">Kişisel Verilerin İşlenmesi Hakkında Rıza Metni</label>
+            <div class="scrollable-box">
                 Tercihiniz uyarınca bizimle paylaştığınız kişisel verilerinizi, sizi daha iyi tanıyabilmek ve size özel fırsatlar sunmak için işliyor olacağız. Örneğin, eğitim durumunuz, mesleğiniz, ilgi alanlarınız uyarınca size özel fırsatlar tasarlamamızı ve sunmamızı isterseniz bu bilgilerinizi işliyor ve size özel fırsat/hizmetlerden yararlanmanızı sağlıyoruz. Bizimle bu kapsamdaki kişisel verilerinizi paylaşmak zorunda olmadığınızın belirtmek isteriz.
-               <br/> Kişisel verilerinizi aşağıda belirtilen kapsamda işleyebilmemiz için rıza vermek isterseniz kutucuğu işaretleyebilirsiniz.
-                <br/><b>- İşlenmesi İstenen Kişisel Veriler:</b> Ürün/hizmetlerimize ilişkin tercih, beğeni ve kullanım alışkanlıklarınız ile ilgi alanlarınız; sizinle olan ilişkimiz kapsamında sağladığınız müşteri işlem bilgileriniz; satın alınan ürün, hizmet süreçlerinde veya anket ve kampanyalarımızda sağladığınız pazarlama bilgileriniz; mesleğiniz; medeni durumunuz, eğitim durumunuz; kimlik ve iletişim bilgileriniz, bize sağladığınız kişisel verilerinizin analizi sonucunda elde edilen verileriniz.
-                <br/><b>- Verilerin İşlenme Amaçları:</b> Ürün/hizmetlerimize dair deneyiminizi geliştirmek ve kişiselleştirmek; profilleme, segmentasyon ve pazarlama analizleri süreçlerini yürütmek; müşterilerimizin ihtiyaç, tercih ve ilgi alanlarını anlamak; müşterilerimizin ihtiyaçlarına, tercihlerine ve ilgi alanlarına uygun ürün/hizmetleri sunmak; pazarlama stratejilerimizi belirlemek ve pazarlama faaliyetlerimizin etkinliğini ölçmek.
-                <br/><b>- Verilerin Faaliyet Kapsamında Aktarılacağı Taraflar:</b> Yukarıdaki aynı amaçları gerçekleştirebilmek için destek ve hizmet aldığımız tedarikçiler, iş ortaklarımız, grup şirketlerimiz ve üreticiler.
-            </p>
-        </div>
-	<p>Kişisel verilerinizi yukarıdaki Rıza Metninde belirtilen kapsamda işlememizi onaylıyor musunuz?</p>
-    <label>
-        <input type="radio" name="approval" value="evet" required> Evet, onaylıyorum.
-    </label>
-    <label>
-        <input type="radio" name="approval" value="hayir" required> Hayır, onaylamıyorum.
-    </label>
+            </div>
+            <p>Kişisel verilerinizi yukarıdaki Rıza Metninde belirtilen kapsamda işlememizi onaylıyor musunuz?</p>
+            <label>
+                <input type="radio" name="approval" value="evet" required> Evet, onaylıyorum.
+            </label>
+            <label>
+                <input type="radio" name="approval" value="hayir" required> Hayır, onaylamıyorum.
+            </label>
 
-    <p>Borusan Otomotiv İthalat ve Dağıtım A.Ş.'nin tanıtım ve kampanyalarından haberdar olmak için ileti almak ister misiniz?</p>
-    <label>
-        <input type="radio" name="newsletter" value="evet" required> Evet
-    </label>
-    <label>
-        <input type="radio" name="newsletter" value="hayir" required> Hayır
-    </label>
-    <p><button type="submit">Gönder</button></p>
-</form>    </section>
+            <p>Borusan Otomotiv İthalat ve Dağıtım A.Ş.'nin tanıtım ve kampanyalarından haberdar olmak için ileti almak ister misiniz?</p>
+            <label>
+                <input type="radio" name="newsletter" value="evet" required> Evet
+            </label>
+            <label>
+                <input type="radio" name="newsletter" value="hayir" required> Hayır
+            </label>
+
+            <button type="submit">Gönder</button>
+        </form>
+    </section>
 
     <footer>
-        <!--sosyal medya bağlantıları, vs. -->
+	
+        <div class="social-media">
+        <a href="https://www.instagram.com/bmwturkiye/" target="_blank" title="Instagram">
+        <img src="instagram.png" alt="Instagram">
+    </a>
+    <a href="https://www.facebook.com/BMWTurkiye/?locale=tr_TR" target="_blank" title="Facebook">
+        <img src="face.jpg" alt="Facebook">
+    </a>
+    <a href="https://twitter.com/BMWTurkiye?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" title="X">
+        <img src="x.png" alt="X">
+    </a>
+    <a href="https://www.linkedin.com/showcase/bmwturkiye/?originalSubdomain=tr" target="_blank" title="LınkedIn">
+        <img src="link.png" alt="LınkedIn">
+    </a>
+    <a href="https://www.youtube.com/bmwturkiye" target="_blank" title="Youtube">
+        <img src="yt.png" alt="Youtube">
+    </a>
+	</div>
+    
     </footer>
-
 </body>
 </html>
+
+
